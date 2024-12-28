@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>365</title>
+    <link rel="stylesheet" type="text/css" href="365.css">
+</head>
+
+<body>
+    <p>これは宇宙謎「365」。</p>
+    <p>この謎解きのクリア条件は、「2025年の『1/5』『1/14』『1/14』の値を順番に入力すること」。</p>
+    <p class="rei">【例→値が順に「20」「2」「5」のとき、「2025」を解答として送信する。】</p>
+    <p>それぞれの日付の値は下のウィンドウの「左に月、右に日」を入力し「Enter」を押すと得られる。</p>
+    <p class="rei">ただし、ここで得られる値はすべて2024年のものを参照している。</p>
+    <p class="space"></p>
+
+    <img id="mypic" onclick="slideshow()" src="../365謎/画像/0.PNG" width="100" height="100">
+            <script>
+            var pics_src = new Array("../365謎/画像/0.PNG","../365謎/画像/1.PNG");
+            var num = 0;
+
+            function slideshow(){
+                if (num2 < 3) {
+                    if (num == 1) {
+                    num = 0;
+                }
+                else {
+                    num ++;
+                }
+                }
+                if (num2 > 2) {
+                    num = 0;
+                }
+                document.getElementById("mypic").src=pics_src[num];
+            }
+            </script>
+    
+    <img id="mypic2" onclick="slideshow2()" src="../365謎/画像/1.PNG" width="100" height="100">
+            <script>
+            var pics2_src = new Array("../365謎/画像/0.PNG","../365謎/画像/1.PNG","../365謎/画像/2.PNG","../365謎/画像/3.PNG","../365謎/画像/4.PNG","../365謎/画像/5.PNG","../365謎/画像/6.PNG","../365謎/画像/7.PNG","../365謎/画像/8.PNG","../365謎/画像/9.PNG");
+            var num2 = 1;
+
+            function slideshow2(){
+                if (num == 0) {
+                    if (num2 == 9) {
+                    num2 = 0;
+                }
+                    if ((num2 == 1) && (num3 == 3)) {
+                    num2 = 3;
+                }
+                    else {
+                        num2 ++;
+                    }
+                }
+                if (num == 1) {
+                    if (num2 == 2) {
+                    num2 = 0;
+                }
+                else {
+                    num2 ++;
+                }
+                }
+                document.getElementById("mypic2").src=pics2_src[num2];
+            }
+            </script>
+
+ <img src="../365謎/画像/IMG_5191.PNG" width="100" height="100">
+
+     <img id="mypic3" onclick="slideshow3()" src="../365謎/画像/0.PNG" width="100" height="100">
+     <script>
+     var pics3_src = new Array("../365謎/画像/0.PNG","../365謎/画像/1.PNG","../365謎/画像/2.PNG","../365謎/画像/3.PNG");
+     var num3 = 0;
+
+     function slideshow3(){
+    if (((num4 == 1) && ((num*10+num2 == 2) || (num*10+num2 == 4) || (num*10+num2 == 6) || (num*10+num2 == 9) || (num*10+num2 == 11))) || ((num4 == 0) && (!(num*10+num2 ==  2))) || (num4 > 1)) {
+        if (num3 == 2) {
+            num3 = 0;
+        }
+        else {
+            num3 ++;
+        }
+    }
+    else {
+        if (num3 == 3) {
+            num3 = 0;
+        }
+        else {
+            num3 ++;
+        }
+    }
+         document.getElementById("mypic3").src=pics3_src[num3];
+     }
+     </script>
+
+<img id="mypic4" onclick="slideshow4()" src="../365謎/画像/1.PNG" width="100" height="100">
+     <script>
+     var pics4_src = new Array("../365謎/画像/0.PNG","../365謎/画像/1.PNG","../365謎/画像/2.PNG","../365謎/画像/3.PNG","../365謎/画像/4.PNG","../365謎/画像/5.PNG","../365謎/画像/6.PNG","../365謎/画像/7.PNG","../365謎/画像/8.PNG","../365謎/画像/9.PNG");
+     var num4 = 1;
+
+     function slideshow4(){
+         if (num3 == 3) {
+            if ((num*10+num2 == 1) || (num*10+num2 == 3) || (num*10+num2 == 5) || (num*10+num2 == 7) || (num*10+num2 == 8) || (num*10+num2 == 10) || (num*10+num2 == 12)) {
+            if (num4 == 1) {
+                num4 = 0;
+            }
+            else {
+                num4 ++;
+            }
+        }
+        else {
+            num4 = 0;
+        }
+         }
+         else {
+            if (num4 == 9) {
+                num4 = 0;
+            }
+            else {
+                num4 ++;
+            }
+         }
+         document.getElementById("mypic4").src=pics4_src[num4];
+     }
+     </script>
+
+    <img src="../365謎/画像/IMG_5192.PNG" width="100" height="100">
+
+<button type="button" onclick="sousin()">Enter</button>
+<script>
+
+var pics5_src = new Array("../365謎/画像/0.PNG","../365謎/画像/1.PNG","../365謎/画像/2.PNG","../365謎/画像/3.PNG","../365謎/画像/4.PNG","../365謎/画像/5.PNG","../365謎/画像/6.PNG","../365謎/画像/7.PNG","../365謎/画像/8.PNG","../365謎/画像/9.PNG");
+
+    function sousin() {
+        var M = 0;
+        if (num*10+num2 == 1) {
+            M = 2;
+        }
+        if (num*10+num2 == 2) {
+            M = 5;
+        }
+        if (num*10+num2 == 3) {
+            M = 6;
+        }
+        if (num*10+num2 == 4) {
+            M = 2;
+        }
+        if (num*10+num2 == 5) {
+            M = 4;
+        }
+        if (num*10+num2 == 6) {
+            M = 7;
+        }
+        if (num*10+num2 == 7) {
+            M = 2;
+        }
+        if (num*10+num2 == 8) {
+            M = 5;
+        }
+        if (num*10+num2 == 9) {
+            M = 1;
+        }
+        if (num*10+num2 == 10) {
+            M = 3;
+        }
+        if (num*10+num2 == 11) {
+            M = 6;
+        }
+        if (num*10+num2 == 12) {
+            M = 1;
+        }
+        var N = ((num3*10+num4+M-2)%7+1)*((((num3*10+num4+M-2)-(num3*10+num4+M-2)%7)/7)+1);
+        if (N < 10) {
+        document.getElementById("1keta").src = pics5_src[N];
+        document.getElementById("2keta").src = pics5_src[0];
+        }
+        if (N >= 10) {
+        document.getElementById("1keta").src = pics5_src[N%10];
+        document.getElementById("2keta").src = pics5_src[(N-N%10)/10];
+        }
+    }
+</script>
+
+<img id="2keta" src="画像/0.PNG" width="100" height="100">
+<img id="1keta" src="画像/0.PNG" width="100" height="100">
+<p id="notclear"></p>
+<a href="" id="clear"></a>
+
+<input type="text" id="answer">
+<input type="button" value="Submit" onclick="answer()">
+<script>
+    function answer() {
+        const answer = document.getElementById("answer").value;
+        if (answer == 299) {
+            textbox = "Clear!【クリアツイートはこちら】";
+            document.getElementById("clear").textContent = textbox;
+            textbox = ""
+            document.getElementById("notclear").textContent = textbox;
+        }
+        else {
+            textbox = "答えが違うようだ...";
+            document.getElementById("notclear").textContent = textbox;
+        }
+    }
+</script>
+
+</body>
+</html>

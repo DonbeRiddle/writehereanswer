@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "kaku";
+    src: url("./font/FGMediumHankaku.ttf") format("truetype");
+}
+
+body {
+    background-color: white;
+    font-family: "kaku";
+    line-height: 8px;
+}
+
+input {
+    background-color: black;
+    font-family: "kaku";
+    color: white;
+}
+
+p {
+    font-size: 16px;
+}
+
+.space {
+    font-size: 50px;
+    color: white;
+}
+
+button {
+    font-family: "kaku";
+    background-color: black;
+    color: white;
+}
+
+.rei {
+    font-size: 10px;
+    font-weight: bold;
+}
